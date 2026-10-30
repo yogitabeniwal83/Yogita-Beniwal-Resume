@@ -1,0 +1,351 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+
+\input{glyphtounicode}
+
+%---------- COLORS ----------
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{subheading}{SlateGrey}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% ATS / machine-readable PDF
+\pdfgentounicode=1
+
+%---------- PAGE STYLE ----------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%---------- MARGINS ----------
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%---------- SECTION FORMATTING ----------
+\titleformat{\section}
+  {\vspace{-4pt}\scshape\raggedright\large\bfseries}
+  {}
+  {0em}
+  {}
+  [\color{black}\titlerule \vspace{-5pt}]
+
+%---------- CUSTOM COMMANDS ----------
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    #1
+  }
+}
+
+\newcommand{\classesList}[4]{
+  \item\small{
+    #1 #2 #3 #4
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]
+    {l@{\extracolsep{\fill}}r}
+    \textbf{\large #1} & \textbf{\small #2} \\
+    \textit{\large #3} & \textit{\small #4} \\
+  \end{tabular*}
+  \vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}
+    {l@{\extracolsep{\fill}}r}
+    \textit{\small #1} & \textit{\small #2} \\
+  \end{tabular*}
+  \vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{1.001\textwidth}
+    {l@{\extracolsep{\fill}}r}
+    \small #1 & \textbf{\small #2} \\
+  \end{tabular*}
+  \vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{
+  \resumeItem{#1}
+  \vspace{-4pt}
+}
+
+\renewcommand\labelitemi{
+  $\vcenter{\hbox{\tiny$\bullet$}}$
+}
+
+\renewcommand\labelitemii{
+  $\vcenter{\hbox{\tiny$\bullet$}}$
+}
+
+\newcommand{\resumeSubHeadingListStart}{
+  \begin{itemize}[leftmargin=0.0in,label={}]
+}
+
+\newcommand{\resumeSubHeadingListEnd}{
+  \end{itemize}
+}
+
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}
+}
+
+\newcommand{\resumeItemListEnd}{
+  \end{itemize}\vspace{-5pt}
+}
+
+%===========================================
+% RESUME STARTS HERE
+%===========================================
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+{\Huge \scshape Yogita} \\ \vspace{6pt}
+
+\small
+\href{tel:+919253299750}{\faPhone\ +91 9253299750}
+\quad $|$ \quad
+\href{mailto:yogitabeniwal83@gmail.com}{\faEnvelope\ yogitabeniwal83@gmail.com}
+\quad $|$ \quad
+\href{https://www.linkedin.com/in/yogita-beniwal-44056a383}{\faLinkedin\ LinkedIn}
+\quad $|$ \quad
+\href{https://github.com/yogitabeniwal83}{\faGithub\ GitHub}
+
+\vspace{-8pt}
+\end{center}
+
+
+%---------- PROFESSIONAL SUMMARY ----------
+
+\section{Professional Summary}
+
+\begin{justify}
+\small{
+Computer Science Engineering student and aspiring Full Stack Developer
+with hands-on experience building MERN-based web applications and GenAI
+projects. Skilled in React.js, Node.js, Express.js, MongoDB, and REST APIs,
+with a strong interest in developing scalable and user-focused applications.
+}
+\end{justify}
+
+\vspace{-10pt}
+
+
+%---------- TECHNICAL SKILLS ----------
+
+\section{Technical Skills}
+
+\begin{itemize}[leftmargin=0.15in,label={}]
+
+\small{\item{
+
+\textbf{Programming Languages:}
+TypeScript, JavaScript, Java (Basic Understanding), HTML, CSS \\
+
+\textbf{Frameworks \& Libraries:}
+React.js, Redux, Tailwind CSS, Vite, Next.js \\
+
+\textbf{Developer Tools:}
+Git/GitHub, Postman, VS Code, npm \\
+
+\textbf{Databases:}
+MongoDB Atlas, PostgreSQL
+
+}}
+
+\end{itemize}
+
+\vspace{-16pt}
+
+
+%---------- EXPERIENCE ----------
+
+\section{Experience}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Groot Software}
+  {Feb 2024 -- May 2024}
+  {Full Stack Web Development (MERN)}
+  {}
+
+\resumeItemListStart
+
+\resumeItem{
+Built full-stack web applications using MongoDB, Express.js,
+React.js, and Node.js. Developed seamless integrations between
+user interfaces and backend systems using APIs and databases
+to ensure scalable and efficient application performance.
+}
+
+\resumeItem{
+Delivered responsive user interfaces, maintainable code,
+and full-stack solutions focused on usability and performance.
+}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-16pt}
+
+
+%---------- PROJECTS ----------
+
+\section{Projects}
+
+\resumeSubHeadingListStart
+
+% Airbnb Project
+
+\resumeProjectHeading
+{
+\textbf{Airbnb Clone -- Full-Stack Web Application}
+$|$
+\emph{Node.js, Express.js, MongoDB, Mongoose, EJS, Tailwind CSS}
+}
+{}
+
+\resumeItemListStart
+
+\resumeItem{
+Developed a full-stack Airbnb-style accommodation booking
+application using Node.js, Express.js, MongoDB, and EJS.
+}
+
+\resumeItem{
+Implemented user authentication and session-based authorization
+with persistent sessions stored in MongoDB.
+}
+
+\resumeItem{
+Built functionality for users to browse homes, view property
+details, manage favourites, and interact with accommodation listings.
+}
+
+\resumeItem{
+Structured the backend using MVC architecture with separate
+routes, controllers, models, views, and middleware.
+}
+
+\resumeItemListEnd
+
+
+% AI Interview Studio
+
+\resumeProjectHeading
+{
+\textbf{AI Interview Studio -- Full-Stack GenAI Application}
+$|$
+\emph{Node.js, Express.js, MongoDB, Google GenAI, JWT, Axios, Vite}
+}
+{}
+
+\resumeItemListStart
+
+\resumeItem{
+Developed a full-stack AI-powered interview preparation platform
+with user authentication and interactive interview workflows.
+}
+
+\resumeItem{
+Built REST APIs using Node.js and Express.js with MongoDB and
+Mongoose for persistent user and application data.
+}
+
+\resumeItem{
+Integrated Google GenAI to support AI-driven interview
+functionality and intelligent response generation.
+}
+
+\resumeItem{
+Implemented document handling using Multer and PDF parsing
+for processing uploaded files.
+}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-16pt}
+
+
+%---------- EDUCATION ----------
+
+\section{Education}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Jayoti Vidyapeeth Women's University (JVWU)}
+  {2023 -- 2027}
+  {B.Tech in Computer Science Engineering $|$ GPA: 8.0}
+  {Jaipur, Rajasthan}
+
+\resumeSubheading
+  {Dayanand Sr. Sec. School}
+  {2023}
+  {12th CBSE Board -- Science Stream $|$ Percentage: 75\%}
+  {Sirsa}
+
+\resumeSubheading
+  {Dayanand Sr. Sec. School}
+  {2021}
+  {10th CBSE Board $|$ Percentage: 80\%}
+  {Sirsa}
+
+\resumeSubHeadingListEnd
+
+\end{document}
